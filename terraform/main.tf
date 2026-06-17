@@ -60,4 +60,5 @@ module "compute" {
   max_size                  = var.max_size
   health_check_grace_period = 300
   tags                      = local.common_tags
+  ami_id                    = var.ami_id
 }

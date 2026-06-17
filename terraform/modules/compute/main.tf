@@ -181,7 +181,7 @@ resource "aws_lb_listener" "http" {
 # Launch Template - Uses Custom AMI!
 resource "aws_launch_template" "main" {
   name_prefix   = "${var.project_name}-${var.environment}-"
-  image_id      = data.aws_ami.fastapi_golden.id  # Custom AMI!
+  image_id      = var.ami_id
   instance_type = var.instance_type
 
   iam_instance_profile {

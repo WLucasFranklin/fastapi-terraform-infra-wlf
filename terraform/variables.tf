@@ -44,3 +44,8 @@ variable "key_name" {
   type        = string
   default     = ""
 }
+
+variable "ami_id" {
+  description = "Specific AMI ID to deploy"
+  type        = string
+}

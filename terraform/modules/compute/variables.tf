@@ -59,3 +59,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "ami_id" {
+  description = "Specific AMI ID to deploy"
+  type        = string
+}
